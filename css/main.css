@@ -42,8 +42,8 @@ body {
   /* Home page */
   .home {
     display: flex;
-    background: url(/abstract-technology-particle-background_52683-25766.jpg)
-      no-repeat center center / cover;
+    background: url("/abstract-technology-particle-background_52683-25766.jpg")  
+       no-repeat center center / cover;
     height: 100vh;
     text-align: center;
     /* justify-content: center; */
@@ -51,7 +51,7 @@ body {
   }
 
   .home .myimg {
-    background: url(/item7.png) no-repeat center center / cover;
+    background: url("/item7.png") no-repeat center center / cover;
     height: 250px;
     width: 250px;
     border-radius: 50%;
