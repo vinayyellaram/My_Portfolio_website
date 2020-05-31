@@ -153,7 +153,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 15px;
-    bottom: 0;
+    top: 0;
     left: 0;
     position: fixed;
   }
@@ -213,7 +213,7 @@ body {
     background: white;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   i {
     font-size: 25px;
