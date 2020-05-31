@@ -42,16 +42,69 @@ body {
   /* Home page */
   .home {
     display: flex;
-    background: url("/abstract-technology-particle-background_52683-25766.jpg")  
-       no-repeat center center / cover;
+    background: url("/abstract-technology-particle-background_52683-25766.jpg")
+      no-repeat center center / cover;
     height: 100vh;
     text-align: center;
     /* justify-content: center; */
     flex-direction: column;
   }
 
+  /*Nav bar  */
+  .home .navbar {
+    display: flex;
+    background: black;
+
+    width: 100%;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+
+  .home .navbar a {
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #f161e3);
+    background-size: 300%;
+    z-index: 1;
+  }
+  .home .navbar a:hover {
+    animation: animate 8s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+
+    100% {
+      background-position: 300%;
+    }
+  }
+
+  .home .navbar a:before {
+    content: "";
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #f161e3);
+    z-index: -1;
+    background-size: 400%;
+    border-radius: 50%;
+  }
+
+  .home .navbar a:hover:before {
+    filter: blur(20px);
+  }
+
   .home .myimg {
-    background: url("/item7.png") no-repeat center center / cover;
+    background: url(/item7.png) no-repeat center center / cover;
     height: 250px;
     width: 250px;
     border-radius: 50%;
@@ -84,7 +137,7 @@ body {
   /* Home page */
   .home {
     display: flex;
-    background: url(/abstract-technology-particle-background_52683-25766.jpg)
+    background: url("/abstract-technology-particle-background_52683-25766.jpg")
       no-repeat center center / cover;
     height: 100vh;
     text-align: center;
@@ -145,7 +198,7 @@ body {
   }
 
   .home .myimg {
-    background: url(/item7.png) no-repeat center center / cover;
+    background: url("/item7.png") no-repeat center center / cover;
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -173,3 +226,4 @@ body {
     text-align: center;
   }
 }
+
