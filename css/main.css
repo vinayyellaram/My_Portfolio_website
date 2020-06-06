@@ -9,6 +9,7 @@ body {
   line-height: 1.5;
   background: white;
   color: white;
+  scroll-behavior: smooth;
 }
 /* Custom padding */
 .py1 {
@@ -42,7 +43,7 @@ body {
   /* Home page */
   .home {
     display: flex;
-    background: url("../abstract-technology-particle-background_52683-25766.jpg")
+    background: url("/abstract-technology-particle-background_52683-25766.jpg")
       no-repeat center center / cover;
     height: 100vh;
     text-align: center;
@@ -104,7 +105,7 @@ body {
   }
 
   .home .myimg {
-    background: url("../item7.png") no-repeat center center / cover;
+    background: url("/item7.png") no-repeat center center / cover;
     height: 250px;
     width: 250px;
     border-radius: 50%;
@@ -207,6 +208,69 @@ body {
     margin-top: 30%;
   }
 
+  #skills {
+    padding-top: 20px;
+    height: 100vh;
+    background: rgb(2, 1, 1);
+    width: 100%;
+  }
+  #skills h1 {
+    text-align: center;
+  }
+  #skills .s1 {
+    color: #ffffff;
+    background: rgb(141, 81, 238);
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: auto;
+    border-radius: 3%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 25vh;
+  }
+
+  /* #skills .s1 .icon {
+    width: 40vw;
+    background: black;
+    display: block;
+    border-radius: 5%;
+    color: ivory;
+    height: 20vh;
+    text-align: center;
+  } */
+
+  #skills .s1 .icon_1 {
+    width: 40vw;
+    background: url("../unnamed.jpg") no-repeat center/cover;
+    border-radius: 10%;
+    height: 20vh;
+  }
+  #skills .s1 .icon_2 {
+    width: 40vw;
+    background: url("../download.png") no-repeat center center/cover;
+    display: block;
+    border-radius: 10%;
+    height: 20vh;
+  }
+
+  #skills .s1 .icon_3 {
+    width: 40vw;
+    background: url("../thumb2-python-glitter-logo-programming-language-grid-metal-background-python-creative.jpg")
+      no-repeat center center/cover;
+    display: block;
+    border-radius: 10%;
+    height: 20vh;
+  }
+
+  #skills .s1 .content {
+    font-size: 4vw;
+    margin: 20px;
+    width: 60vw;
+    height: 20vh;
+    text-align: left;
+  }
+
   /* footer */
   #footer {
     display: flex;
@@ -218,12 +282,12 @@ body {
   i {
     font-size: 25px;
   }
-  
+
   .copyright {
     font-size: 10px;
     background: white;
     color: rgb(112, 37, 233);
     text-align: center;
-    padding-bottom:10px;
+    padding: 5px;
   }
 }
